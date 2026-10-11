@@ -2,3 +2,7 @@
 **/*.rs.bk
 *.swp
 .DS_Store
+/.opencode/
+/.cocoindex_code/
+# CocoIndex Code (ccc)
+/.cocoindex_code/
