@@ -1,5 +1,5 @@
 [package]
-name = "phone-audio-cli"
+name = "ZSW-PhoneAudioCli"
 version = "0.1.5"
 edition.workspace = true
 description = "Route a Bluetooth phone's audio to this PC via PipeWire — command line"
@@ -10,6 +10,6 @@ name = "phone-audio"
 path = "src/main.rs"
 
 [dependencies]
-phone-audio-core = { path = "../phone-audio-core" }
+phone-audio-core = { path = "../phone-audio-core", package = "ZSW-PhoneAudioCore" }
 clap = { version = "4", features = ["derive"] }
 serde_json = "1"

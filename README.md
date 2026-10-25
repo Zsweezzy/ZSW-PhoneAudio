@@ -1,4 +1,4 @@
-# Phone Audio
+# ZSW-PhoneAudio
 
 Route a Bluetooth phone's audio to this PC via PipeWire. Say "on" and your
 phone's music plays through the PC speakers; say "off" and it plays on the

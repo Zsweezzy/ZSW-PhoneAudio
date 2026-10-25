@@ -3,6 +3,33 @@
 version = 4
 
 [[package]]
+name = "ZSW-PhoneAudioCli"
+version = "0.1.5"
+dependencies = [
+ "ZSW-PhoneAudioCore",
+ "clap",
+ "serde_json",
+]
+
+[[package]]
+name = "ZSW-PhoneAudioCore"
+version = "0.1.5"
+dependencies = [
+ "serde",
+ "serde_json",
+ "thiserror 2.0.21",
+]
+
+[[package]]
+name = "ZSW-PhoneAudioGui"
+version = "0.1.5"
+dependencies = [
+ "ZSW-PhoneAudioCore",
+ "iced",
+ "tokio",
+]
+
+[[package]]
 name = "ab_glyph"
 version = "0.2.32"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2262,33 +2289,6 @@ name = "percent-encoding"
 version = "2.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9b4f627cb1b25917193a259e49bdad08f671f8d9708acfd5fe0a8c1455d87220"
-
-[[package]]
-name = "phone-audio-cli"
-version = "0.1.5"
-dependencies = [
- "clap",
- "phone-audio-core",
- "serde_json",
-]
-
-[[package]]
-name = "phone-audio-core"
-version = "0.1.5"
-dependencies = [
- "serde",
- "serde_json",
- "thiserror 2.0.21",
-]
-
-[[package]]
-name = "phone-audio-gui"
-version = "0.1.5"
-dependencies = [
- "iced",
- "phone-audio-core",
- "tokio",
-]
 
 [[package]]
 name = "pin-project"
